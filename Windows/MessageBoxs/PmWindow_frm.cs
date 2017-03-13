@@ -27,6 +27,8 @@ namespace DevProLauncher.Windows.MessageBoxs
             ChatLog.LinkClicked += ChatLog_LinkClicked;
             ChatInput.KeyPress += ChatInput_KeyPress;
 
+            notifyIcon.MouseClick += NotifyIcon_MouseClick;
+
             Activated += ChatInput_Click;
             ApplyNewSettings();
         }
@@ -54,8 +56,17 @@ namespace DevProLauncher.Windows.MessageBoxs
 
                 if (message.from != null)
                     if (message.from.username != Program.UserInfo.username && !ChatInput.Focused)
+                    {
                         FlashWindow.Start(this);
+                        notifyIcon.Visible = true;
+                        notifyIcon.ShowBalloonTip(5000, message.from.username, message.message, ToolTipIcon.None);
+                    }
             }
+        }
+
+        private void NotifyIcon_MouseClick(object sender, MouseEventArgs e)
+        {
+            FlashWindow.SetForegroundWindow(Handle);
         }
 
         private void Chat_MouseUp(object sender, MouseEventArgs e)
