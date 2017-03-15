@@ -64,6 +64,8 @@ namespace DevProLauncher.Windows
             this.Timestampchk = new System.Windows.Forms.CheckBox();
             this.DuelRequestchk = new System.Windows.Forms.CheckBox();
             this.HideJoinLeavechk = new System.Windows.Forms.CheckBox();
+            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.pmnotificationchk = new System.Windows.Forms.CheckBox();
             this.pmwindowchk = new System.Windows.Forms.CheckBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
@@ -118,6 +120,7 @@ namespace DevProLauncher.Windows
             this.tableLayoutPanel4.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.tableLayoutPanel14.SuspendLayout();
+            this.tableLayoutPanel9.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -479,8 +482,8 @@ namespace DevProLauncher.Windows
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 3;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 244F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 122F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 256F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 127F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(263, 560);
             this.tableLayoutPanel4.TabIndex = 0;
@@ -493,7 +496,7 @@ namespace DevProLauncher.Windows
             this.groupBox7.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox7.Size = new System.Drawing.Size(255, 236);
+            this.groupBox7.Size = new System.Drawing.Size(255, 248);
             this.groupBox7.TabIndex = 2;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Settings";
@@ -508,20 +511,20 @@ namespace DevProLauncher.Windows
             this.tableLayoutPanel14.Controls.Add(this.Timestampchk, 0, 1);
             this.tableLayoutPanel14.Controls.Add(this.DuelRequestchk, 0, 2);
             this.tableLayoutPanel14.Controls.Add(this.HideJoinLeavechk, 0, 3);
-            this.tableLayoutPanel14.Controls.Add(this.pmwindowchk, 0, 4);
+            this.tableLayoutPanel14.Controls.Add(this.tableLayoutPanel9, 0, 4);
             this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel14.Location = new System.Drawing.Point(4, 19);
             this.tableLayoutPanel14.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel14.Name = "tableLayoutPanel14";
             this.tableLayoutPanel14.RowCount = 7;
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel14.Size = new System.Drawing.Size(247, 213);
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 19F));
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(247, 225);
             this.tableLayoutPanel14.TabIndex = 0;
             // 
             // refuseteamchk
@@ -529,10 +532,10 @@ namespace DevProLauncher.Windows
             this.refuseteamchk.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.refuseteamchk.AutoSize = true;
             this.refuseteamchk.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.refuseteamchk.Location = new System.Drawing.Point(44, 190);
+            this.refuseteamchk.Location = new System.Drawing.Point(44, 197);
             this.refuseteamchk.Margin = new System.Windows.Forms.Padding(4);
             this.refuseteamchk.Name = "refuseteamchk";
-            this.refuseteamchk.Size = new System.Drawing.Size(159, 19);
+            this.refuseteamchk.Size = new System.Drawing.Size(159, 21);
             this.refuseteamchk.TabIndex = 8;
             this.refuseteamchk.Text = "Refuse Team Invites";
             this.refuseteamchk.UseVisualStyleBackColor = true;
@@ -542,7 +545,7 @@ namespace DevProLauncher.Windows
             this.usernamecolorchk.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.usernamecolorchk.AutoSize = true;
             this.usernamecolorchk.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.usernamecolorchk.Location = new System.Drawing.Point(54, 160);
+            this.usernamecolorchk.Location = new System.Drawing.Point(54, 165);
             this.usernamecolorchk.Margin = new System.Windows.Forms.Padding(4);
             this.usernamecolorchk.Name = "usernamecolorchk";
             this.usernamecolorchk.Size = new System.Drawing.Size(139, 21);
@@ -555,7 +558,7 @@ namespace DevProLauncher.Windows
             this.Colorblindchk.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Colorblindchk.AutoSize = true;
             this.Colorblindchk.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Colorblindchk.Location = new System.Drawing.Point(55, 5);
+            this.Colorblindchk.Location = new System.Drawing.Point(55, 4);
             this.Colorblindchk.Margin = new System.Windows.Forms.Padding(4);
             this.Colorblindchk.Name = "Colorblindchk";
             this.Colorblindchk.Size = new System.Drawing.Size(137, 21);
@@ -570,7 +573,7 @@ namespace DevProLauncher.Windows
             this.Timestampchk.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Timestampchk.Checked = true;
             this.Timestampchk.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Timestampchk.Location = new System.Drawing.Point(52, 36);
+            this.Timestampchk.Location = new System.Drawing.Point(52, 34);
             this.Timestampchk.Margin = new System.Windows.Forms.Padding(4);
             this.Timestampchk.Name = "Timestampchk";
             this.Timestampchk.Size = new System.Drawing.Size(143, 21);
@@ -583,7 +586,7 @@ namespace DevProLauncher.Windows
             this.DuelRequestchk.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DuelRequestchk.AutoSize = true;
             this.DuelRequestchk.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.DuelRequestchk.Location = new System.Drawing.Point(66, 67);
+            this.DuelRequestchk.Location = new System.Drawing.Point(66, 64);
             this.DuelRequestchk.Margin = new System.Windows.Forms.Padding(4);
             this.DuelRequestchk.Name = "DuelRequestchk";
             this.DuelRequestchk.Size = new System.Drawing.Size(115, 21);
@@ -596,7 +599,7 @@ namespace DevProLauncher.Windows
             this.HideJoinLeavechk.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.HideJoinLeavechk.AutoSize = true;
             this.HideJoinLeavechk.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.HideJoinLeavechk.Location = new System.Drawing.Point(57, 98);
+            this.HideJoinLeavechk.Location = new System.Drawing.Point(57, 94);
             this.HideJoinLeavechk.Margin = new System.Windows.Forms.Padding(4);
             this.HideJoinLeavechk.Name = "HideJoinLeavechk";
             this.HideJoinLeavechk.Size = new System.Drawing.Size(132, 21);
@@ -604,16 +607,44 @@ namespace DevProLauncher.Windows
             this.HideJoinLeavechk.Text = "Hide Join/Leave";
             this.HideJoinLeavechk.UseVisualStyleBackColor = true;
             // 
+            // tableLayoutPanel9
+            // 
+            this.tableLayoutPanel9.ColumnCount = 2;
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel9.Controls.Add(this.pmnotificationchk, 0, 0);
+            this.tableLayoutPanel9.Controls.Add(this.pmwindowchk, 0, 0);
+            this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(3, 123);
+            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
+            this.tableLayoutPanel9.RowCount = 1;
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(241, 34);
+            this.tableLayoutPanel9.TabIndex = 9;
+            // 
+            // pmnotificationchk
+            // 
+            this.pmnotificationchk.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pmnotificationchk.AutoSize = true;
+            this.pmnotificationchk.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.pmnotificationchk.Location = new System.Drawing.Point(135, 6);
+            this.pmnotificationchk.Margin = new System.Windows.Forms.Padding(4);
+            this.pmnotificationchk.Name = "pmnotificationchk";
+            this.pmnotificationchk.Size = new System.Drawing.Size(90, 21);
+            this.pmnotificationchk.TabIndex = 8;
+            this.pmnotificationchk.Text = "PM Notify";
+            this.pmnotificationchk.UseVisualStyleBackColor = true;
+            // 
             // pmwindowchk
             // 
             this.pmwindowchk.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pmwindowchk.AutoSize = true;
             this.pmwindowchk.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.pmwindowchk.Location = new System.Drawing.Point(68, 129);
+            this.pmwindowchk.Location = new System.Drawing.Point(5, 6);
             this.pmwindowchk.Margin = new System.Windows.Forms.Padding(4);
             this.pmwindowchk.Name = "pmwindowchk";
             this.pmwindowchk.Size = new System.Drawing.Size(110, 21);
-            this.pmwindowchk.TabIndex = 6;
+            this.pmwindowchk.TabIndex = 7;
             this.pmwindowchk.Text = "PM Windows";
             this.pmwindowchk.UseVisualStyleBackColor = true;
             // 
@@ -621,11 +652,11 @@ namespace DevProLauncher.Windows
             // 
             this.groupBox5.Controls.Add(this.tableLayoutPanel11);
             this.groupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox5.Location = new System.Drawing.Point(4, 370);
+            this.groupBox5.Location = new System.Drawing.Point(4, 387);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox5.Size = new System.Drawing.Size(255, 186);
+            this.groupBox5.Size = new System.Drawing.Size(255, 169);
             this.groupBox5.TabIndex = 3;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Color Style";
@@ -682,7 +713,7 @@ namespace DevProLauncher.Windows
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(247, 163);
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(247, 146);
             this.tableLayoutPanel11.TabIndex = 1;
             // 
             // SystemColorBtn
@@ -977,11 +1008,11 @@ namespace DevProLauncher.Windows
             // 
             this.groupBox1.Controls.Add(this.tableLayoutPanel7);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(4, 248);
+            this.groupBox1.Location = new System.Drawing.Point(4, 260);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(255, 114);
+            this.groupBox1.Size = new System.Drawing.Size(255, 119);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Font Settings";
@@ -1001,7 +1032,7 @@ namespace DevProLauncher.Windows
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 36.58537F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 63.41463F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(247, 91);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(247, 96);
             this.tableLayoutPanel7.TabIndex = 0;
             // 
             // label1
@@ -1011,7 +1042,7 @@ namespace DevProLauncher.Windows
             this.label1.Location = new System.Drawing.Point(4, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(239, 19);
+            this.label1.Size = new System.Drawing.Size(239, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Font";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1021,7 +1052,7 @@ namespace DevProLauncher.Windows
             this.FontList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.FontList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.FontList.FormattingEnabled = true;
-            this.FontList.Location = new System.Drawing.Point(4, 23);
+            this.FontList.Location = new System.Drawing.Point(4, 24);
             this.FontList.Margin = new System.Windows.Forms.Padding(4);
             this.FontList.Name = "FontList";
             this.FontList.Size = new System.Drawing.Size(239, 24);
@@ -1034,7 +1065,7 @@ namespace DevProLauncher.Windows
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.FontSize, 1, 0);
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(4, 55);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(4, 60);
             this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
@@ -1129,6 +1160,8 @@ namespace DevProLauncher.Windows
             this.groupBox7.ResumeLayout(false);
             this.tableLayoutPanel14.ResumeLayout(false);
             this.tableLayoutPanel14.PerformLayout();
+            this.tableLayoutPanel9.ResumeLayout(false);
+            this.tableLayoutPanel9.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.tableLayoutPanel11.ResumeLayout(false);
             this.tableLayoutPanel11.PerformLayout();
@@ -1199,7 +1232,6 @@ namespace DevProLauncher.Windows
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.Label label2;
         private DevProLauncher.Windows.Components.FixedTabControl ChannelTabs;
-        private System.Windows.Forms.CheckBox pmwindowchk;
         private System.Windows.Forms.CheckBox usernamecolorchk;
         private System.Windows.Forms.CheckBox refuseteamchk;
         private DevProLauncher.Windows.Components.FixedTabControl UserListTabs;
@@ -1219,5 +1251,8 @@ namespace DevProLauncher.Windows
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
+        private System.Windows.Forms.CheckBox pmnotificationchk;
+        private System.Windows.Forms.CheckBox pmwindowchk;
     }
 }

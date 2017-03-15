@@ -71,6 +71,7 @@
     <Compile Include="Helpers\HardwareIdEditor.cs" />
     <Compile Include="Helpers\ImageResizer.cs" />
     <Compile Include="Helpers\LauncherHelper.cs" />
+    <Compile Include="Helpers\PicsManager.cs" />
     <Compile Include="Helpers\RegEditor.cs" />
     <Compile Include="Helpers\ReplayReader.cs" />
     <Compile Include="Network\Data\ChannelData.cs" />

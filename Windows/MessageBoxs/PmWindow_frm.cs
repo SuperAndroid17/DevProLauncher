@@ -58,8 +58,11 @@ namespace DevProLauncher.Windows.MessageBoxs
                     if (message.from.username != Program.UserInfo.username && !ChatInput.Focused)
                     {
                         FlashWindow.Start(this);
-                        notifyIcon.Visible = true;
-                        notifyIcon.ShowBalloonTip(5000, message.from.username, message.message, ToolTipIcon.None);
+                        if (Program.Config.PmNotifications)
+                        {
+                            notifyIcon.Visible = true;
+                            notifyIcon.ShowBalloonTip(5000, message.from.username, message.message, ToolTipIcon.None);
+                        }
                     }
             }
         }

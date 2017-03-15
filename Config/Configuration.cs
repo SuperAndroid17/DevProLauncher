@@ -92,6 +92,7 @@ namespace DevProLauncher.Config
         public bool ShowTimeStamp = true;
         public bool RefuseDuelRequests = false;
         public bool PmWindows = true;
+        public bool PmNotifications = true;
         public bool UsernameColors = true;
         public bool RefuseTeamInvites = false;
 

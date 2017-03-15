@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Net;
+using System.Reflection;
 using System.Windows.Forms;
 using System.Xml.Serialization;
 
@@ -17,6 +18,9 @@ namespace DevProLauncher
     internal static class Program
     {
         public const string Version = "210721";
+
+        public static string AppPath = Application.StartupPath;
+
         public static Configuration Config;
         public static LanguageManager LanguageManager;
         public static ChatClient ChatServer;
@@ -52,6 +56,7 @@ namespace DevProLauncher
 
             LanguageManager = new LanguageManager();
             LanguageManager.Load(Config.Language);
+            PicsManager.CheckPics();
 #if !DEBUG
             if (LauncherHelper.CheckInstance())
                 if (MessageBox.Show(LanguageManager.Translation.pmsbProgRun) == DialogResult.OK)

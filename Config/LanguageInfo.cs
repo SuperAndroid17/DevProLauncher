@@ -307,6 +307,7 @@ namespace DevProLauncher.Config
         public string chatoptionsGb4 = "Channel Settings";
         public string chatoptionsLblHideJoinLeave = "Hide Join/Leave";
         public string chatoptionsLblPmWindows = "PM Windows";
+        public string chatoptionsLblPmWindowsNotification = "PM Notify";
         public string chatoptionsLblUserColors = "Username Colors";
         public string chatoptionsLblRefuseTeamInvites = "Refuse Team Invites";
         public string chatoptionsLblColorBlindMode = "Color Blind Mode";
