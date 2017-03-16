@@ -312,6 +312,7 @@ namespace DevProLauncher.Config
         public string chatoptionsLblColorBlindMode = "Color Blind Mode";
         public string chatoptionsLblShowTimeStamp = "Show Time Stamp";
         public string chatoptionsLblRefuseDuelRequests = "Refuse Duel Requests";
+        public string chatoptionsLblPmWindowsNotification = "PM Notify";
 
         public string chatoptionsFontTitle = "Font Settings";
         public string chatoptionsFontLbl = "Font";

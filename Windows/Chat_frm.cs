@@ -188,6 +188,7 @@ namespace DevProLauncher.Windows
             pmwindowchk.Checked = Program.Config.PmWindows;
             usernamecolorchk.Checked = Program.Config.UsernameColors;
             refuseteamchk.Checked = Program.Config.RefuseTeamInvites;
+            pmnotificationchk.Checked = Program.Config.PmNotifications;
 
             if (!string.IsNullOrEmpty(Program.Config.ChatFont))
             {
@@ -212,6 +213,7 @@ namespace DevProLauncher.Windows
             refuseteamchk.Text = lang.chatoptionsLblRefuseTeamInvites;
             Timestampchk.Text = lang.chatoptionsLblShowTimeStamp;
             DuelRequestchk.Text = lang.chatoptionsLblRefuseDuelRequests;
+            pmwindowchk.Text = lang.chatoptionsLblPmWindowsNotification;
 
             groupBox1.Text = lang.chatoptionsFontTitle;
             label1.Text = lang.chatoptionsFontLbl;
@@ -1118,7 +1120,9 @@ namespace DevProLauncher.Windows
                     {
                         m_pmWindows.Values.ToList().ForEach(x => x.Close());
                     }
-
+                    break;
+                case "pmnotificationchk":
+                    Program.Config.PmNotifications = pmnotificationchk.Checked;
                     break;
             }
 

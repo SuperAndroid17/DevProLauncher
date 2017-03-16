@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Net;
+using System.Reflection;
 using System.Windows.Forms;
 using System.Xml.Serialization;
 
@@ -52,6 +53,7 @@ namespace DevProLauncher
 
             LanguageManager = new LanguageManager();
             LanguageManager.Load(Config.Language);
+            PicsManager.CheckPics();
 #if !DEBUG
             if (LauncherHelper.CheckInstance())
                 if (MessageBox.Show(LanguageManager.Translation.pmsbProgRun) == DialogResult.OK)

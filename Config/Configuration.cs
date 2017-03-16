@@ -94,6 +94,7 @@ namespace DevProLauncher.Config
         public bool PmWindows = true;
         public bool UsernameColors = true;
         public bool RefuseTeamInvites = false;
+        public bool PmNotifications = true;
 
         public SerializableColor ChatBGColor = new SerializableColor(Color.White);
         public SerializableColor NormalTextColor = new SerializableColor(Color.Black);

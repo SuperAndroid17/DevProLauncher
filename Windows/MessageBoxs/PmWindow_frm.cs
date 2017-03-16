@@ -27,8 +27,15 @@ namespace DevProLauncher.Windows.MessageBoxs
             ChatLog.LinkClicked += ChatLog_LinkClicked;
             ChatInput.KeyPress += ChatInput_KeyPress;
 
+            notifyIcon.Click += NotifyIcon_Click;
+
             Activated += ChatInput_Click;
             ApplyNewSettings();
+        }
+
+        private void NotifyIcon_Click(object sender, EventArgs e)
+        {
+            FlashWindow.SetForegroundWindow(Handle);
         }
 
         public override sealed string Text
@@ -54,7 +61,14 @@ namespace DevProLauncher.Windows.MessageBoxs
 
                 if (message.from != null)
                     if (message.from.username != Program.UserInfo.username && !ChatInput.Focused)
+                    {
                         FlashWindow.Start(this);
+                        if (Program.Config.PmNotifications)
+                        {
+                            notifyIcon.Visible = true;
+                            notifyIcon.ShowBalloonTip(5000, message.from.username, message.message, ToolTipIcon.None);
+                        }
+                    }
             }
         }
 
