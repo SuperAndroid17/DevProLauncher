@@ -27,10 +27,15 @@ namespace DevProLauncher.Windows.MessageBoxs
             ChatLog.LinkClicked += ChatLog_LinkClicked;
             ChatInput.KeyPress += ChatInput_KeyPress;
 
-            notifyIcon.MouseClick += NotifyIcon_MouseClick;
+            notifyIcon.Click += NotifyIcon_Click;
 
             Activated += ChatInput_Click;
             ApplyNewSettings();
+        }
+
+        private void NotifyIcon_Click(object sender, EventArgs e)
+        {
+            FlashWindow.SetForegroundWindow(Handle);
         }
 
         public override sealed string Text
@@ -65,11 +70,6 @@ namespace DevProLauncher.Windows.MessageBoxs
                         }
                     }
             }
-        }
-
-        private void NotifyIcon_MouseClick(object sender, MouseEventArgs e)
-        {
-            FlashWindow.SetForegroundWindow(Handle);
         }
 
         private void Chat_MouseUp(object sender, MouseEventArgs e)

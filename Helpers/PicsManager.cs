@@ -10,9 +10,11 @@ namespace DevProLauncher.Helpers
 {
     public static class PicsManager
     {
+        public static string AppPath = Application.StartupPath;
+
         public static void CheckPics()
         {
-            if (!Directory.Exists(Path.Combine(Program.AppPath, "pics")))
+            if (!Directory.Exists(Path.Combine(AppPath, "pics")))
             {
                 if (MessageBox.Show("Pics are missing on your launcher, do you want to install their ?", "Missing pics !", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
@@ -20,7 +22,7 @@ namespace DevProLauncher.Helpers
                     {
                         StartInfo =
                             {
-                                FileName = Path.Combine(Program.AppPath, "PicsDownloader.exe")
+                                FileName = Path.Combine(AppPath, "PicsDownloader.exe")
                             }
                     };
                     updateProcess.Start();
