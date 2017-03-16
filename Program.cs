@@ -19,8 +19,6 @@ namespace DevProLauncher
     {
         public const string Version = "210721";
 
-        public static string AppPath = Application.StartupPath;
-
         public static Configuration Config;
         public static LanguageManager LanguageManager;
         public static ChatClient ChatServer;
@@ -42,6 +40,8 @@ namespace DevProLauncher
         public static ServerInfo Server;
         public static Dictionary<string, ServerInfo> CheckmateServerList = new Dictionary<string, ServerInfo>();
         public static Random Rand = new Random();
+
+        public static string AppPath = Application.StartupPath;
 
         [STAThread]
         private static void Main()
