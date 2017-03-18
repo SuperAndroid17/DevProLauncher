@@ -16,6 +16,8 @@ namespace DevProLauncher.Helpers
             {
                 m_code = GetHash(GetCPUId()+GetBIOSId()+GetDiskId());
             }
+            if (m_code == "")
+                m_code = "None";
             return m_code;
         }
 
@@ -70,50 +72,63 @@ namespace DevProLauncher.Helpers
         }
         private static string GetCPUId()
         {
-            //Uses first CPU identifier available in order of preference
-            //Don't get all identifiers, as it is very time consuming
-            string retVal = Identifier("Win32_Processor", "UniqueId");
-            if (retVal == "") //If no UniqueID, use ProcessorID
+            try
             {
-                retVal = Identifier("Win32_Processor", "ProcessorId");
-                if (retVal == "") //If no ProcessorId, use Name
+                //Uses first CPU identifier available in order of preference
+                //Don't get all identifiers, as it is very time consuming
+                string retVal = Identifier("Win32_Processor", "UniqueId");
+                if (retVal == "") //If no UniqueID, use ProcessorID
                 {
-                    retVal = Identifier("Win32_Processor", "Name");
-                    if (retVal == "") //If no Name, use Manufacturer
+                    retVal = Identifier("Win32_Processor", "ProcessorId");
+                    if (retVal == "") //If no ProcessorId, use Name
                     {
-                        retVal = Identifier("Win32_Processor", "Manufacturer");
+                        retVal = Identifier("Win32_Processor", "Name");
+                        if (retVal == "") //If no Name, use Manufacturer
+                        {
+                            retVal = Identifier("Win32_Processor", "Manufacturer");
+                        }
+                        //Add clock speed for extra security
+                        retVal += Identifier("Win32_Processor", "MaxClockSpeed");
                     }
-                    //Add clock speed for extra security
-                    retVal += Identifier("Win32_Processor", "MaxClockSpeed");
                 }
+                return retVal;
             }
-            return retVal;
+            catch { return ""; }
         }
         //BIOS Identifier
         private static string GetBIOSId()
         {
+            try { 
             return Identifier("Win32_BIOS", "Manufacturer")
             + Identifier("Win32_BIOS", "SMBIOSBIOSVersion")
             + Identifier("Win32_BIOS", "IdentificationCode")
             + Identifier("Win32_BIOS", "SerialNumber")
             + Identifier("Win32_BIOS", "ReleaseDate")
             + Identifier("Win32_BIOS", "Version");
+            }
+            catch { return ""; }
         }
         //Main physical hard drive ID
         private static string GetDiskId()
         {
+            try { 
             return Identifier("Win32_DiskDrive", "Model")
             + Identifier("Win32_DiskDrive", "Manufacturer")
             + Identifier("Win32_DiskDrive", "Signature")
             + Identifier("Win32_DiskDrive", "TotalHeads");
         }
+            catch { return ""; }
+        }
         //Motherboard ID
         private static string GetMotherboardId()
         {
+            try { 
             return Identifier("Win32_BaseBoard", "Model")
             + Identifier("Win32_BaseBoard", "Manufacturer")
             + Identifier("Win32_BaseBoard", "Name")
             + Identifier("Win32_BaseBoard", "SerialNumber");
+            }
+            catch { return ""; }
         }
 
         private static string GetHash(string s)
