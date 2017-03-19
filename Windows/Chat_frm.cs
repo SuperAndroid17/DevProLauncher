@@ -213,7 +213,7 @@ namespace DevProLauncher.Windows
             refuseteamchk.Text = lang.chatoptionsLblRefuseTeamInvites;
             Timestampchk.Text = lang.chatoptionsLblShowTimeStamp;
             DuelRequestchk.Text = lang.chatoptionsLblRefuseDuelRequests;
-            pmwindowchk.Text = lang.chatoptionsLblPmWindowsNotification;
+            pmnotificationchk.Text = lang.chatoptionsLblPmWindowsNotification;
 
             groupBox1.Text = lang.chatoptionsFontTitle;
             label1.Text = lang.chatoptionsFontLbl;
