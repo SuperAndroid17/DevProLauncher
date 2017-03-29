@@ -65,7 +65,7 @@
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -80,7 +80,7 @@
             this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.92547F));
@@ -108,7 +108,7 @@
             this.tableLayoutPanel3.Controls.Add(this.savePassCheckBox, 5, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 550);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -133,7 +133,7 @@
             this.languageSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.languageSelect.FormattingEnabled = true;
             this.languageSelect.Location = new System.Drawing.Point(1073, 4);
-            this.languageSelect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.languageSelect.Margin = new System.Windows.Forms.Padding(4);
             this.languageSelect.Name = "languageSelect";
             this.languageSelect.Size = new System.Drawing.Size(89, 24);
             this.languageSelect.TabIndex = 7;
@@ -154,7 +154,7 @@
             // 
             this.usernameInput.Dock = System.Windows.Forms.DockStyle.Fill;
             this.usernameInput.Location = new System.Drawing.Point(205, 4);
-            this.usernameInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usernameInput.Margin = new System.Windows.Forms.Padding(4);
             this.usernameInput.Name = "usernameInput";
             this.usernameInput.Size = new System.Drawing.Size(179, 22);
             this.usernameInput.TabIndex = 1;
@@ -175,7 +175,7 @@
             // 
             this.passwordInput.Dock = System.Windows.Forms.DockStyle.Fill;
             this.passwordInput.Location = new System.Drawing.Point(528, 4);
-            this.passwordInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.passwordInput.Margin = new System.Windows.Forms.Padding(4);
             this.passwordInput.Name = "passwordInput";
             this.passwordInput.Size = new System.Drawing.Size(195, 22);
             this.passwordInput.TabIndex = 3;
@@ -187,7 +187,7 @@
             this.savePassCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.savePassCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.savePassCheckBox.Location = new System.Drawing.Point(731, 4);
-            this.savePassCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.savePassCheckBox.Margin = new System.Windows.Forms.Padding(4);
             this.savePassCheckBox.Name = "savePassCheckBox";
             this.savePassCheckBox.Size = new System.Drawing.Size(141, 32);
             this.savePassCheckBox.TabIndex = 10;
@@ -202,7 +202,7 @@
             this.panel1.Controls.Add(this.PatchNotes);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(4, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1166, 538);
             this.panel1.TabIndex = 1;
@@ -210,34 +210,34 @@
             // adBox
             // 
             this.adBox.Controls.Add(this.AdPanel);
-            this.adBox.Location = new System.Drawing.Point(336, 42);
-            this.adBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.adBox.Location = new System.Drawing.Point(365, 5);
+            this.adBox.Margin = new System.Windows.Forms.Padding(4);
             this.adBox.Name = "adBox";
-            this.adBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.adBox.Size = new System.Drawing.Size(517, 210);
+            this.adBox.Padding = new System.Windows.Forms.Padding(4);
+            this.adBox.Size = new System.Drawing.Size(460, 360);
             this.adBox.TabIndex = 5;
             this.adBox.TabStop = false;
             this.adBox.Text = "Ads";
             // 
             // AdPanel
             // 
-            this.AdPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.AdPanel.ColumnCount = 1;
             this.AdPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.AdPanel.Location = new System.Drawing.Point(16, 23);
-            this.AdPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AdPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AdPanel.Location = new System.Drawing.Point(4, 19);
+            this.AdPanel.Margin = new System.Windows.Forms.Padding(4);
             this.AdPanel.Name = "AdPanel";
             this.AdPanel.RowCount = 1;
             this.AdPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 283F));
             this.AdPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 283F));
-            this.AdPanel.Size = new System.Drawing.Size(493, 172);
+            this.AdPanel.Size = new System.Drawing.Size(452, 337);
             this.AdPanel.TabIndex = 4;
             // 
             // LoadBtn
             // 
             this.LoadBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LoadBtn.Location = new System.Drawing.Point(513, 466);
-            this.LoadBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LoadBtn.Margin = new System.Windows.Forms.Padding(4);
             this.LoadBtn.Name = "LoadBtn";
             this.LoadBtn.Size = new System.Drawing.Size(171, 28);
             this.LoadBtn.TabIndex = 2;
@@ -249,7 +249,7 @@
             // 
             this.PatchNotes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PatchNotes.Location = new System.Drawing.Point(0, 0);
-            this.PatchNotes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PatchNotes.Margin = new System.Windows.Forms.Padding(4);
             this.PatchNotes.MinimumSize = new System.Drawing.Size(27, 25);
             this.PatchNotes.Name = "PatchNotes";
             this.PatchNotes.Size = new System.Drawing.Size(1166, 538);
@@ -264,7 +264,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.BottomUp;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(1186, 4);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(111, 594);
             this.flowLayoutPanel1.TabIndex = 1;
@@ -272,7 +272,7 @@
             // loginBtn
             // 
             this.loginBtn.Location = new System.Drawing.Point(4, 562);
-            this.loginBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.loginBtn.Margin = new System.Windows.Forms.Padding(4);
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(100, 28);
             this.loginBtn.TabIndex = 0;
@@ -283,7 +283,7 @@
             // registerBtn
             // 
             this.registerBtn.Location = new System.Drawing.Point(4, 526);
-            this.registerBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.registerBtn.Margin = new System.Windows.Forms.Padding(4);
             this.registerBtn.Name = "registerBtn";
             this.registerBtn.Size = new System.Drawing.Size(100, 28);
             this.registerBtn.TabIndex = 1;
@@ -294,7 +294,7 @@
             // validateBtn
             // 
             this.validateBtn.Location = new System.Drawing.Point(4, 490);
-            this.validateBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.validateBtn.Margin = new System.Windows.Forms.Padding(4);
             this.validateBtn.Name = "validateBtn";
             this.validateBtn.Size = new System.Drawing.Size(100, 28);
             this.validateBtn.TabIndex = 3;
@@ -305,7 +305,7 @@
             // recoverBtn
             // 
             this.recoverBtn.Location = new System.Drawing.Point(4, 454);
-            this.recoverBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.recoverBtn.Margin = new System.Windows.Forms.Padding(4);
             this.recoverBtn.Name = "recoverBtn";
             this.recoverBtn.Size = new System.Drawing.Size(100, 28);
             this.recoverBtn.TabIndex = 4;
@@ -320,7 +320,7 @@
             this.ClientSize = new System.Drawing.Size(1301, 602);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LoginFrm";
             this.Text = "Login_frm";
             this.tableLayoutPanel1.ResumeLayout(false);
