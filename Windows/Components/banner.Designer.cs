@@ -36,21 +36,24 @@
             // 
             this.BannerImage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BannerImage.Location = new System.Drawing.Point(0, 0);
+            this.BannerImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BannerImage.Name = "BannerImage";
-            this.BannerImage.Size = new System.Drawing.Size(366, 135);
+            this.BannerImage.Size = new System.Drawing.Size(488, 166);
+            this.BannerImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.BannerImage.TabIndex = 0;
             this.BannerImage.TabStop = false;
             this.BannerImage.Click += new System.EventHandler(this.BannerImage_Click);
             // 
             // Banner
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(366, 135);
+            this.ClientSize = new System.Drawing.Size(488, 166);
             this.ControlBox = false;
             this.Controls.Add(this.BannerImage);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Banner";
@@ -59,6 +62,7 @@
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.BannerImage)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

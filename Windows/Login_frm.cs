@@ -106,31 +106,26 @@ namespace DevProLauncher.Windows
                 switch (Program.Config.Language.ToLower())
                 {
                     case "german":
-                        image = Properties.Resources.cardmarketDE;
                         lang = "de";
                         break;
 
                     case "spanish":
-                        image = Properties.Resources.cardmarketES;
                         lang = "es";
                         break;
 
                     case "french":
-                        image = Properties.Resources.cardmarketFR;
                         lang = "fr";
                         break;
 
                     case "italian":
-                        image = Properties.Resources.cardmarketIT;
                         lang = "it";
                         break;
 
                     default:
-                        image = Properties.Resources.cardmarketEN;
                         lang = "en";
                         break;
                 }
-
+                image = Properties.Resources.cardmarket;
                 this.BeginInvoke((MethodInvoker)delegate
                 {
                     var item = new Banner("tcgmarket", "http://158.69.116.140/web-devpro/linktracker.php?lang=" + lang, image);

@@ -427,11 +427,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Favicon_DropShadow_64x64.ico" />
-    <Content Include="Resources\cardmarketDE.jpg" />
-    <Content Include="Resources\cardmarketEN.jpg" />
-    <Content Include="Resources\cardmarketES.jpg" />
-    <Content Include="Resources\cardmarketFR.jpg" />
-    <Content Include="Resources\cardmarketIT.jpg" />
+    <None Include="Resources\cardmarket.jpg" />
     <None Include="Resources\swords.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
