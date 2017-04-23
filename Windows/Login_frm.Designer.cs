@@ -228,8 +228,8 @@
             this.AdPanel.Margin = new System.Windows.Forms.Padding(4);
             this.AdPanel.Name = "AdPanel";
             this.AdPanel.RowCount = 1;
-            this.AdPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 283F));
-            this.AdPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 283F));
+            this.AdPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 337F));
+            this.AdPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 337F));
             this.AdPanel.Size = new System.Drawing.Size(452, 337);
             this.AdPanel.TabIndex = 4;
             // 

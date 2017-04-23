@@ -53,7 +53,8 @@ namespace DevProLauncher
 
             LanguageManager = new LanguageManager();
             LanguageManager.Load(Config.Language);
-            PicsManager.CheckPics();
+            if (PicsManager.CheckPics())
+                return;
 #if !DEBUG
             if (LauncherHelper.CheckInstance())
                 if (MessageBox.Show(LanguageManager.Translation.pmsbProgRun) == DialogResult.OK)

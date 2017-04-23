@@ -12,7 +12,7 @@ namespace DevProLauncher.Helpers
     {
         public static string AppPath = Application.StartupPath;
 
-        public static void CheckPics()
+        public static bool CheckPics()
         {
             if (!Directory.Exists(Path.Combine(AppPath, "pics")))
             {
@@ -26,13 +26,15 @@ namespace DevProLauncher.Helpers
                             }
                     };
                     updateProcess.Start();
-                    return;
+                    return true;
                 }
                 else
                 {
-                    return;
+                    return false;
                 }
             }
+            else
+                return false;
         }
     }
 }
