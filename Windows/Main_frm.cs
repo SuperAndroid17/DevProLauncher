@@ -171,7 +171,7 @@ namespace DevProLauncher.Windows
 
         private void ForumBtn_Click(object sender, EventArgs e)
         {
-            Process.Start("https://ygodevpro.com/forum/");
+            Process.Start("http://ygodevpro.com/forum/");
         }
 
         private void Bugtracker_Click(object sender, EventArgs e)
